@@ -8,11 +8,38 @@
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #A69C98;
 }
 
 .logoheader {
     width: 50px;
     border-radius: 50px;
+    margin: 0.3rem;
+}
+
+.navegacao {
+    margin-right: 4rem;
+}
+
+.navegacao_links {
+    text-decoration: none;
+    margin-left: 1rem;
+    color: black;
+}
+
+.principal {
+    background-color: #592A0F;
+}
+
+.principalinicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tituloinicio{
+    color: white;
+    font-size: 4rem;
 }
 
 .cafeinicio {

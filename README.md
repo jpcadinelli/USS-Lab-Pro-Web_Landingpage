@@ -17,7 +17,7 @@ Destaque um menu breve com opções de cafés e lanches.
 Adicione uma seção com imagens de pessoas lendo ou trabalhando na cafeteria.
 Insira um mapa pequeno ou um link para a localização da cafeteria.
 Por fim, tenha uma seção de contato, para reserva de mesas ou pedidos de informações.
-
+https://color.adobe.com/pt/search?q=brown
 
 
 2. Crie uma Landing Page para um Evento de Tecnologia
