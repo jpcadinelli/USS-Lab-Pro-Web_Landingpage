@@ -90,16 +90,6 @@ h2 {
     position: relative;
 }
 
-.hero-section .button::after {
-    content: '';
-    background: url("./assets/arrow-curve.svg");
-    position: absolute;
-    top: 5rem;
-    right: -4rem;
-    height: 48px;
-    width: 132px;
-}
-
 .decoration {
     display: block;
     position: relative;
@@ -259,6 +249,18 @@ footer nav a {
 }
 
 /* Responsividade */
+@media screen and (min-width: 26rem) {
+    .hero-section .button::after {
+        content: '';
+        background: url("./assets/arrow-curve.svg");
+        position: absolute;
+        top: 5rem;
+        right: -4rem;
+        height: 48px;
+        width: 132px;
+    }
+}
+
 @media screen and (min-width: 40rem) {
     header nav {
         display: block;
