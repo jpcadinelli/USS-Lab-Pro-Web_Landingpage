@@ -1,30 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria</title>
+    <title>Café & Conforto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="cabecalho">
-            <div>
-                <img src="https://th.bing.com/th?id=OIP.cAmErC-KamDwTUC9oE14UQHaHa&w=200&h=200&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2" alt="Logo cafeteria exemplo" class="logoheader">
-            </div>
-            <div class="navegacao">
-                <a href="/html/" class="navegacao_links">Sobre nós</a>
-                <a href="/css/" class="navegacao_links">Fotos</a>
-                <a href="/js/" class="navegacao_links">Mapa</a>
-            </div>
-        </nav>
-    </header>
-    <main class="principal">
-        <div class="principalinicio">
-            <h1 class="tituloinicio">Café & Conforto</h1>
-            <img src="https://th.bing.com/th/id/R.a83f1328a876924ba9b66323880759e4?rik=qGbvBWMqhoJjrw&pid=ImgRaw&r=0" alt="Café servido com grãos de café espalhados" class="cafeinicio"> 
+        <div class="container">
+            <img src="./assets/logo-cafe-e-conforto-preto-semfrase.png" alt="Logo Café & Conforto">
+            <nav>
+                <a href="#">Dinks</a>
+                <a href="#">Fotos</a>
+                <a href="#">Mapa</a>
+                <a href="#">Contato</a>
+            </nav>
+            <a href="#" class="button mt-1 mx-auto">Newsletter</a>
         </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="container row-reverse">
+                <img src="./assets/como-fazer-cafe-quentinho-no-conforto-da-sua-casa-4.jpg" alt="Banda de jazz tocando">
+                <div>
+                    <h1 class="mt-2">Café & Conforto</h1>
+                    <p class="mt-2 mb-2">O melhor café da cidade em um espaço aconchegante, perfeito para trabalho e leitura.</p>
+                    <a href="#" class="button">Venha se aconchegar</a>
+                </div>
+            </div>
+        </section>
+        <section class="courses-section">
+            <div class="cards">
+                <article class="card">
+                    <img src="./assets/coffeeandjoy_expresso.jpg" alt="Foto de Expresso" class="mini-cafe">
+                    <strong>Expresso</strong>
+                    <p>É o nosso cargo chefe. Feito com grãos premiados da região, com certeza é a melhor opção para quem gosta de um clássico.</p>
+                    <a href="#">
+                        <img src="./assets/arrow-right.svg" alt="Ir para página do curso">
+                    </a>
+                </article>
+                <article class="card">
+                    <img src="./assets/coffeeandjoy_Macchiato.jpg" alt="Foto de Macchiato" class="mini-cafe">
+                    <strong>Macchiato</strong>
+                    <p>O mais amado. Feito com muito amor, este classico italiano arrasa corações.</p>
+                    <a href="#">
+                        <img src="./assets/arrow-right.svg" alt="Ir para página do curso">
+                    </a>
+                </article>
+                <article class="card">
+                    <img src="./assets/coffeeandjoy_Latte.jpg" alt="Foto de Latte" class="mini-cafe">
+                    <strong>Latte</strong>
+                    <p>Tem especialistas que falam que com a proporção certa de um bom café com leite cremoso, você chega aos céus.</p>
+                    <a href="#">
+                        <img src="./assets/arrow-right.svg" alt="Ir para página do curso">
+                    </a>
+                </article>
+                <article class="card">
+                    <img src="./assets/coffeeandjoy_Mocha.jpg" alt="Foto de Mocha" class="mini-cafe">
+                    <strong>Mocha</strong>
+                    <p>Simplesmente o favorito da criançada, mas não se deixe enganar, também agrada os mais refinados paladares.</p>
+                    <a href="#">
+                        <img src="./assets/arrow-right.svg" alt="Ir para página do curso">
+                    </a>
+                </article>
+            </div>
+            <h2 class="text-center">E <span class="text-primary">vários</span> outros!</h2>
+            <a href="#" class="button mt-2 mx-auto">Conhecer cardápio</a>
+        </section>
     </main>
+    <footer>
+        <div class="container">
+            <div class="about-column">
+                <img src="./assets/logo-cafe-e-conforto-preto-semfrase.png" alt="Logo Café & Conforto" class="mt-1 mb-1">
+                <p class="mb-2">O melhor café da cidade em um espaço aconchegante, perfeito para trabalho e leitura.</p>
+            </div>
+            <nav class="mb-2">
+                <a href="#">Início</a>
+                <a href="#">Drinks</a>
+                <a href="#">Cursos</a>
+                <a href="#">Eventos</a>
+                <a href="#">Contato</a>
+            </nav>
+            <form class="newsletter-form">
+                <label for="email" class="mb-1">Receba dicas de livros que combinam com café.</label>
+                <input type="email" name="email" id="email" class="mb-1" placeholder="Digite o seu email">
+                <button class="button mb-2">Quero receber</button>
+            </form>
+        </div>
+    </footer>
 </body>
 </html>
