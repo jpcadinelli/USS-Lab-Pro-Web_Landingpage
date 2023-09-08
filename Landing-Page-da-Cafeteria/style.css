@@ -17,7 +17,7 @@ body {
     padding: 0 1rem;
 }
 
-header, .hero-section, .courses-section, footer {
+header, .hero-section, .courses-section, .fotos, .mapa, .contato, footer {
     border-color: var(--color-black);
     border-style: solid;
     border-width: 0 1px 1px 1px;
@@ -133,6 +133,7 @@ h2 {
     box-shadow: 4px 4px 0 var(--color-black);
     max-width: 17rem;
     padding: 2rem 0 0 2rem;
+    height: 24rem;
 }
 
 .card:nth-child(2n) {
@@ -152,9 +153,51 @@ h2 {
     width: fit-content;
 }
 
+.card p {
+    padding-right: 1rem;
+}
+
 .mini-cafe {
     width: 4rem;
     box-shadow: 4px 4px 0 var(--color-black);
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.fotos img {
+    max-width: 100%;
+    width: 40rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 4px 4px 0 var(--color-black);
+}
+
+.fotos h2 {
+    font-size: 2rem;
+}
+
+.mapa {
+    max-width: 100%;
+    padding-bottom: 8rem;
+}
+
+.mapa iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    width: 600px; 
+    height: 450px;
+    max-width: 100%;
+}
+
+.contato h2 {
+    text-shadow: 2px 2px 0 var(--color-black);
 }
 
 /* Rodapé */
@@ -243,6 +286,12 @@ footer nav a {
     header img, header nav, header .button {
         margin: 0;
     }
+
+    .redes {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 @media screen and (min-width: 72rem) {
@@ -260,7 +309,6 @@ footer nav a {
         flex-direction: row-reverse;
     }
 
-    
     .hero-section img {
         max-width: 60%;
     }
@@ -272,6 +320,18 @@ footer nav a {
     .about-column p {
         font-size: 1.25rem;
         max-width: 16rem;
+    }
+
+    .fotos {
+        flex-direction: row;
+    }
+
+    .fotos div {
+        padding: 2rem;
+    }
+
+    .fotos h2 {
+        font-size: 170%;
     }
 
     footer nav {
