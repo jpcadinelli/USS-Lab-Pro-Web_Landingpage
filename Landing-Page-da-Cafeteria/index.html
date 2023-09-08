@@ -21,7 +21,17 @@
                 <a href="#mapa">Mapa</a>
                 <a href="#contatos">Contato</a>
             </nav>
-            <a href="#newsletter" class="button mt-1 mx-auto">Newsletter</a>
+            <div class="botoes">
+                <a href="#newsletter" class="button mt-1 mx-auto">Newsletter</a>
+                <div class="mt-1">
+                    <input onclick="trocar()" type="checkbox" class="checkbox__tema" id="chk">
+                    <label class="label__tema" for="chk">
+                        <i class="fas fa-moon"></i>
+                        <i class="fas fa-sun"></i>
+                        <div class="ball__tema"></div>
+                    </label>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -42,7 +52,7 @@
                     <strong>Expresso</strong>
                     <p>É o nosso cargo chefe. Feito com grãos premiados da região, com certeza é a melhor opção para quem gosta de um clássico.</p>
                     <a href="#">
-                        <img src="./assets/arrow-right.svg" alt="Ir para página do drink">
+                        <img src="./assets/arrow-right.svg" alt="Ir para página do drink" class="setaDireita">
                     </a>
                 </article>
                 <article class="card">
@@ -50,7 +60,7 @@
                     <strong>Macchiato</strong>
                     <p>O mais amado. Feito com muito amor, este classico italiano arrasa corações.</p>
                     <a href="#">
-                        <img src="./assets/arrow-right.svg" alt="Ir para página do drink">
+                        <img src="./assets/arrow-right.svg" alt="Ir para página do drink" class="setaDireita">
                     </a>
                 </article>
                 <article class="card">
@@ -58,7 +68,7 @@
                     <strong>Latte</strong>
                     <p>Tem especialistas que falam que com a proporção certa de um bom café com leite cremoso, você chega aos céus.</p>
                     <a href="#">
-                        <img src="./assets/arrow-right.svg" alt="Ir para página do drink">
+                        <img src="./assets/arrow-right.svg" alt="Ir para página do drink" class="setaDireita">
                     </a>
                 </article>
                 <article class="card">
@@ -66,7 +76,7 @@
                     <strong>Mocha</strong>
                     <p>Simplesmente o favorito da criançada, mas não se deixe enganar, também agrada os mais refinados paladares.</p>
                     <a href="#">
-                        <img src="./assets/arrow-right.svg" alt="Ir para página do drink">
+                        <img src="./assets/arrow-right.svg" alt="Ir para página do drink" class="setaDireita">
                     </a>
                 </article>
             </div>
@@ -103,7 +113,7 @@
     <footer id="newsletter">
         <div class="container">
             <div class="about-column">
-                <img src="./assets/logo-cafe-e-conforto-preto-semfrase.png" alt="Logo Café & Conforto" class="mt-1 mb-1">
+                <img src="./assets/logo-cafe-e-conforto-preto-semfrase.png" alt="Logo Café & Conforto" class="mt-1 mb-1" id="logofinal">
                 <p class="mb-2">O melhor café da cidade em um espaço aconchegante, perfeito para trabalho e leitura.</p>
             </div>
             <nav class="mb-2">
@@ -120,5 +130,7 @@
             </form>
         </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/d1de98f6fc.js" crossorigin="anonymous"></script>
 </body>
 </html>

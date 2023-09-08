@@ -17,6 +17,18 @@ body {
     padding: 0 1rem;
 }
 
+:root .dark {
+    --color-primary: #ed4d1b;
+    --color-secondary: #ff9a3c;
+    --color-black: #FFF2E5;
+    --color-white: #000;
+}
+
+body.dark {
+    background: linear-gradient(90deg, rgb(14, 6, 1) 0%, black 100%);
+    color: var(--color-black);
+}
+
 header, .hero-section, .courses-section, .fotos, .mapa, .contato, footer {
     border-color: var(--color-black);
     border-style: solid;
@@ -147,6 +159,17 @@ h2 {
     padding-right: 1rem;
 }
 
+.card .setaDireita {
+    width: 64px;
+    height: 64px;
+}
+
+.dark .card .setaDireita {
+    width: 64px;
+    height: 64px;
+    padding: 1rem;
+}
+
 .mini-cafe {
     width: 4rem;
     box-shadow: 4px 4px 0 var(--color-black);
@@ -259,6 +282,12 @@ footer nav a {
         height: 48px;
         width: 132px;
     }
+
+    .dark .hero-section .button::after {
+        background: url("./assets/arrow-curve-creme.png");
+        background-size: 132px;
+        background-repeat: no-repeat;
+    }
 }
 
 @media screen and (min-width: 40rem) {
@@ -349,4 +378,54 @@ footer nav a {
     .container {
         max-width: 80rem;
     }
+}
+
+/* Botão do tema */
+.botoes {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.checkbox__tema {
+    opacity: 0;
+    position: absolute;
+}
+
+.label__tema {
+    background: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1);
+}
+
+.ball__tema {
+    background-color: #ccc;
+    border-radius: 50px;
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox__tema:checked + .label__tema .ball__tema {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: rgb(253, 253, 191);
+}
+
+.fa-sun {
+    color: #ff9a3c;
 }
