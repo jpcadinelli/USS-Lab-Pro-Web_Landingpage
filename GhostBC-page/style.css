@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Grenze Gotisch', cursive;
+    list-style: none;
+}
+
+:root {
+    --color-primary: black;
+    --color-secondary: darkred;
+    --color-text: white;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+body {
+    background: var(--color-primary);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 10vh;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+}
+
+.cabecalho img {
+    max-height: 6vh;
+    margin-top: 2vh;
+    margin-left: 1vh;
+}
+
+.cabecalho-nav {
+    margin-top: 2vh;
+}
+
+.cabecalho-nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cabecalho-nav-link {
+    padding-right: 1vw;
+}
+
+.correcao-cabelho-fixo {
+    padding-top: 10vh;
+}
+
+.biografia img {
+    max-width: 100%;
+}
+
+.card {
+    margin-left: 8%;
+    margin-top: -10vh;
+}
+
+.card-biografia {
+    color: var(--color-text);
+    text-align: justify;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.card-biografia {
+    max-width: 80vw;
+    padding: 2vw;
+    border-radius: 10px;
+}
+
+.iframe-spotify {
+    margin-left: 10vw;
+}
