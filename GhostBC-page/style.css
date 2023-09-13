@@ -11,6 +11,7 @@
     --color-primary: black;
     --color-secondary: darkred;
     --color-text: white;
+    --color-box: rgba(40,40,40,100);
 }
 
 a {
@@ -94,8 +95,110 @@ header {
     margin-left: 10%;
 }
 
-.iframe-spotify, .iframe-yt {
+#discografia, #videos, #shows, #contato, #redessociais {
+    margin-top: 1rem;
+}
+
+.album {
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background: var(--color-box);
+    border: 2px solid var(--color-primary);
+    border-radius: 10px;
+    max-width: 80vw;
+}
+
+.album img {
+    max-width: 30vw;
+    padding-top: .65rem;
+}
+
+.album div {
+    padding-left: 1rem;
+}
+
+.album div h3 {
+    font-size: 24px;
+}
+
+.album ul {
+    padding-left: 1rem;
+}
+
+.album li {
+    list-style: decimal;
+}
+
+.discografia-artista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.discografia-artista a {
+    background: var(--color-secondary);
+    padding: 3px 15px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 var(--color-text);
+}
+
+.discografia-artista a:hover {
+    color: var(--color-primary);
+}
+
+.iframe-spotify {
+    max-width: 88vw;
+    margin-top: 2rem;
+}
+
+#videos {
+    margin-top: 1rem;
+}
+
+.iframe-yt {
     max-width: 80vw;
     max-height: 20vh;
     margin-left: 10vw;
+}
+
+.shows article {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.linha-shows {
+    margin-left: 2rem;
+    width: 80vw;
+}
+
+.data, .pais {
+    font-size: 20px;
+    font-weight: 700;    
+    text-shadow: 1px 1px 0 var(--color-secondary);
+}
+
+.local {
+    text-shadow: 1px 1px 0 var(--color-secondary);
+}
+
+.ingressos {
+    background: var(--color-secondary);
+    padding: 3px 15px;
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+}
+
+.ingressos:hover {
+    color: var(--color-primary);
 }
