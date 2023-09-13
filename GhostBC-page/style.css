@@ -161,10 +161,16 @@ header {
     margin-top: 1rem;
 }
 
+.videos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .iframe-yt {
+    margin-top: .75rem;
     max-width: 80vw;
-    max-height: 20vh;
-    margin-left: 10vw;
+    max-height: 45vw;
 }
 
 .shows article {
@@ -173,12 +179,13 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .linha-shows {
-    margin-left: 2rem;
+    margin-left: auto;
+    margin-right: auto;
     width: 80vw;
 }
 
