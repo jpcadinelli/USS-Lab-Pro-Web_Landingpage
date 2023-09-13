@@ -28,6 +28,7 @@ body {
 
 header {
     position: fixed;
+    z-index: 9;
     top: 0;
     right: 0;
     width: 100vw;
@@ -63,7 +64,7 @@ header {
 }
 
 .correcao-cabelho-fixo {
-    padding-top: 10vh;
+    padding-top: 9vh;
 }
 
 .biografia img {
@@ -88,6 +89,13 @@ header {
     border-radius: 10px;
 }
 
-.iframe-spotify {
+.titulo-discografia, .titulo-videos, .titulo-shows, .titulo-contato, .titulo-redessociais {
+    color: var(--color-text);
+    margin-left: 10%;
+}
+
+.iframe-spotify, .iframe-yt {
+    max-width: 80vw;
+    max-height: 20vh;
     margin-left: 10vw;
 }
