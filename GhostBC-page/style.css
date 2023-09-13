@@ -261,7 +261,8 @@ header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3vw;
 }
 
 .redessociais img {
@@ -281,4 +282,123 @@ footer div {
 
 .copyright {
     text-align: center;
+}
+
+/* Responsividade */
+@media screen and (min-width: 437px) {
+    .cabecalho {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media  screen and (min-width: 460px) {
+    .card {
+        width: 386px;
+        margin-right: 10vw;
+        margin-left: auto;
+        margin-top: -15vh;
+    }
+
+    .discografia {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .album {
+        width: 400px;
+    }
+
+    .album img {
+        width: 138px;
+    }
+
+    .videos {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        margin-top: -20vh;
+    }
+
+    .iframe-spotify {
+        width: 676px;
+    }
+
+    .shows-info {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .local {
+        position: absolute;
+        margin-left: 16vw;
+    }
+
+    .pais {
+        position: absolute;
+        margin-left: 32vw;
+    }
+
+    .obrigatorio {
+        text-align: center;
+        padding-left: 35rem;
+    }
+
+    .contato input, .contato select {
+        width: 614px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contato button {
+        width: 192px;
+    }
+
+    .redessociais {
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .contato-p-mensagem {
+        text-align: center;
+        padding-right: 34rem;
+    }
+
+    .contato-p-email {
+        text-align: center;
+        padding-right: 36rem;
+    }
+    
+    .contato-p-nome {
+        text-align: center;
+        padding-right: 34.5rem;
+    }
+
+    .contato-p-pais {
+        text-align: center;
+        padding-right: 36.5rem;
+    }
+}
+
+@media screen and (min-width: 1442px) {
+    .cabecalho-nav-link {
+        font-size: 32px;
+    }
+
+    .card {
+        margin-top: -25vh;
+    }
 }
