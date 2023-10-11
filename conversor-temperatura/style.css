@@ -14,7 +14,6 @@
     /* Neutral */
     --white: hsl(0, 0%, 100%);
     --light-grey: hsl(217, 12%, 63%);
-    --medium-grey: hsl(216, 12%, 54%);
     --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
 }
@@ -42,6 +41,10 @@ h1 {
 
 .input {
     margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
 }
 
 span {
@@ -54,10 +57,11 @@ input {
     border-radius: 5px;
     height: 30px;
     font-size: 24px;
+    background: var(--light-grey);
 }
 
 input::placeholder {
-    color: var(--medium-grey);
+    color: var(--dark-blue);
     padding-left: .25rem;
 }
 
