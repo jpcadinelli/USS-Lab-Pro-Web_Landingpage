@@ -52,6 +52,8 @@ input {
     border: none;
     color: var(--very-dark-blue);
     border-radius: 5px;
+    height: 30px;
+    font-size: 24px;
 }
 
 input::placeholder {
@@ -76,6 +78,6 @@ button:hover {
 }
 
 #resp {
-    height: 60px;
+    margin-top: 1rem;
     color: var(--white);
 }
