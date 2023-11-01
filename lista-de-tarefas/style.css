@@ -61,6 +61,11 @@ main {
     border-radius: 5px;
     box-shadow: 1px 1px 10px rgba(194, 197, 204, .05);
     padding: 1rem;
+    margin: .75rem 0;
+}
+
+.concluida {
+    background-color: darkslategray;
 }
 
 .info-esq-tarefa {
@@ -70,6 +75,11 @@ main {
 
 .check {
     margin-top: .4rem;
+    cursor: pointer;
+}
+
+.check:hover {
+    color: green;
 }
 
 .tarefa-a-fazer {
@@ -78,6 +88,11 @@ main {
 
 .tarefa-concluida {
     color:greenyellow;
+}
+
+.trash:hover {
+    color: red;
+    cursor: pointer;
 }
 
 .info-esq-tarefa p {

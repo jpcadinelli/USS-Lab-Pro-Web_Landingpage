@@ -8,42 +8,40 @@ function limparInput() {
     nomeTarefa.value = '';
 };
 
+function deletarTarefa(posicao) {
+    tarefas.splice(posicao, 1);
+    atualizarListaTarefas();
+}
+
+function concluirTarefa(posicao) {
+    tarefas[posicao].concluida = !tarefas[posicao].concluida;
+    atualizarListaTarefas();
+}
+
 function atualizarListaTarefas() {
-    listaTarefasContainer.innerHTML = ``
-    for(var i = 0; i < tarefas.length; i++) {
-        listaTarefasContainer.innerHTML += `
-            <li class='tarefa'>
+    listaTarefasContainer.innerHTML = ``;
+    let novaLi = '';
+    tarefas.forEach((item, posicao) => {
+        novaLi += `
+            <li class='tarefa ${item.concluida && 'concluida'}'>
                 <div class='info-esq-tarefa'>
-                    <i class="fa-solid fa-circle-check tarefa-a-fazer check"></i>
-                    <p>${tarefas[i].nome}</p>
+                    <i class="fa-solid fa-circle-check tarefa-a-fazer check ${item.concluida && 'tarefa-concluida'}" onclick='concluirTarefa(${posicao})'></i>
+                    <p>${item.nome}</p>
                 </div>
-                <i class="fa-solid fa-trash-can tarefa-a-fazer trash"></i>
+                <i class="fa-solid fa-trash-can tarefa-a-fazer trash" onclick='deletarTarefa(${posicao})'></i>
             </li>
-        `
-    };
+        `;
+    });
+    listaTarefasContainer.innerHTML = novaLi;
     console.log(tarefas);
-    
-    let checkLista = document.querySelectorAll('.check');
-    for (var inc = 0; inc < checkLista.length; inc++) {
-        checkLista[inc].addEventListener('click', () => {
-            alert('O elemento clicado foi o ' + inc);
-        });
-    }
-    console.log(checkLista);
 };
 
 adcBtn.addEventListener('click', () => {
     let inserindoTarefa = new Object();
     inserindoTarefa.nome = nomeTarefa.value;
     inserindoTarefa.concluida = false;
-    tarefas.push(inserindoTarefa)
+    tarefas.push(inserindoTarefa);
     
     limparInput();
     atualizarListaTarefas();
-});
-
-
-let trashLista = document.querySelectorAll('.trash');
-trashLista.addEventListener('click', () => {
-
 });
