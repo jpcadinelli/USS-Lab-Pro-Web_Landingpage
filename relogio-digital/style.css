@@ -10,3 +10,15 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+.rodape {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.texto-rodape, .texto-rodape a {
+    color: lightgrey;
+    font-size: 14px;
+}
