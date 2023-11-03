@@ -19,7 +19,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .horas, .minutos, .segundos {
@@ -27,6 +27,19 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    padding: 1rem;
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+}
+
+.hora, .minuto, .segundo {
+    font-size: 106px;
+    font-weight: 700;
+}
+
+.info-hora, .info-minuto, .info-segundo {
+    font-size: 20px;
 }
 
 .rodape {
@@ -37,6 +50,6 @@ main {
 }
 
 .texto-rodape, .texto-rodape a {
-    color: lightgrey;
+    color: darkgrey;
     font-size: 14px;
 }
