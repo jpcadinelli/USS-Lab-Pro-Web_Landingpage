@@ -6,20 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Relógio Digital</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="script.js"></script>
 </head>
 <body>
+    <div class="info">
+        <i class="fa-solid fa-circle-info" onmouseover="aparecerTexto()" onmouseout="reset();"></i>
+        <div class="informacoes">
+            <span class="fuso-horario"></span>
+        </div>
+    </div>
     <main>
         <div class="horas">
-            <span class="hora">21</span>
+            <span class="hora">00</span>
             <span class="info-hora">horas</span>
         </div>
         <div class="minutos">
-            <span class="minuto">17</span>
+            <span class="minuto">00</span>
             <span class="info-minuto">minutos</span>
         </div>
         <div class="segundos">
-            <span class="segundo">25</span>
+            <span class="segundo">00</span>
             <span class="info-segundo">segundos</span>
         </div>
     </main>

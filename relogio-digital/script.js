@@ -1,14 +1,23 @@
 const getTime = () => {
     const date = new Date
     return {
+        data: date,
         hours: date.getHours(),
         minutes: date.getMinutes(),
         seconds: date.getSeconds(),
     }
 }
 
+function aparecerTexto() {
+    document.querySelector('.informacoes').classList.add('mostrar-informacoes')
+}
+
+function reset() {
+    document.querySelector('.informacoes').classList.remove('mostrar-informacoes')
+}
+
 setInterval(() => {
-    const { hours, minutes, seconds } = getTime()
+    const { data, hours, minutes, seconds } = getTime()
 
     if (hours < 10) {
         document.querySelector('.hora').innerHTML = '0' + hours
@@ -25,4 +34,6 @@ setInterval(() => {
     } else {
         document.querySelector('.segundo').innerHTML = seconds
     }
+
+    document.querySelector('.fuso-horario').innerHTML = data
 }, 1000)

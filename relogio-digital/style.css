@@ -14,6 +14,29 @@ body {
     justify-content: center;
 }
 
+.info {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: black
+}
+
+.informacoes {
+    display: none;
+    position: absolute;
+    width: 300px;
+    top: 0;
+    left: 25px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, .05);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+}
+
+.mostrar-informacoes {
+    display: block;
+}
+
 main {
     display: flex;
     flex-direction: row;
