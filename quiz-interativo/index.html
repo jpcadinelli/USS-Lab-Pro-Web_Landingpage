@@ -9,6 +9,17 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    
+    <main>
+        <h1>Quer testar seus conhecimentos?</h1>
+        <form>
+            <span>Selecione o tema:</span>
+            <select name="tema" id="tema">
+                <option value=""></option>
+                <option value="programacao">Programação</option>
+            </select>
+            <button type="submit" onclick="iniciarQuiz()">Selecionar</button>
+        </form>
+    </main>
+    <div class="quiz escondido" id="quiz"></div>
 </body>
 </html>

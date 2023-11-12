@@ -1,5 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: url('./assets/Space-Background-Image.jpg'), no-repeat;
+    background-size: cover;
+    padding-top: 2rem;
+}
+
+main {
+    background: rgba(255, 255, 255, .01);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .35);
+    padding: 2rem;
+    width: 70%;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    font-size: 46px;
+}
+
+span {
+    color: white;
+}
+
+.escondido {
+    visibility: hidden;
+}
+
+.visivel {
+    visibility: visible;
+}
+
+.quiz {
+    background: rgba(255, 255, 255, .01);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .35);
+    padding: 2rem;
+    width: 70%;
+    border-radius: 20px;
+    text-align: center;
+    margin: auto;
 }
