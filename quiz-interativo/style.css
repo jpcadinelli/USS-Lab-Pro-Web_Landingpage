@@ -47,9 +47,23 @@ span {
     background: rgba(255, 255, 255, .01);
     backdrop-filter: blur(4px);
     box-shadow: 0 0 15px rgba(0, 0, 0, .35);
-    padding: 2rem;
+    padding: .1rem 2rem;
     width: 70%;
     border-radius: 20px;
     text-align: center;
-    margin: auto;
+    margin: 2rem auto;
+}
+
+.perguntas {
+    margin: 2rem 0;
+    text-align: start;
+}
+
+.pergunta {
+    color: white;
+}
+
+.alternativa {
+    color: white;
+    padding-left: 1rem;
 }
