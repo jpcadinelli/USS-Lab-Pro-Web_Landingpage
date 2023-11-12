@@ -1,4 +1,5 @@
 const quizDiv = document.querySelector('#quiz');
+const main = document.querySelector('#main')
 
 const perguntasObj = [
     {
@@ -31,5 +32,32 @@ const perguntasObj = [
 ]
 
 function iniciarQuiz() {
-    
+    let i = 0
+
+    quizDiv.innerHTML = `
+        <div class='perguntas'>
+            <p class="pergunta">${perguntasObj[i].p}</p>
+            <ul>
+                <li><button type="button" onclick="selecionaAlternativa(a, ${i})">a) ${perguntasObj[i].a}</button></li>
+                <li><button type="button" onclick="selecionaAlternativa(b, ${i})">b) ${perguntasObj[i].b}</button></li>
+                <li><button type="button" onclick="selecionaAlternativa(c, ${i})">c) ${perguntasObj[i].c}</button></li>
+                <li><button type="button" onclick="selecionaAlternativa(d, ${i})">d) ${perguntasObj[i].d}</button></li>
+                <li><button type="button" onclick="selecionaAlternativa(e, ${i})">e) ${perguntasObj[i].e}</button></li>
+            </ul>
+            <button type="button" class='confirmar' onclick='confirmar(${quest}, ${alt})'>Confirmar</button>
+        </div>    
+    `
+}
+
+function selecionaAlternativa(alt, quest) {
+    const quest = quest
+    const alt = alt
+}
+
+function confirmar(quest, alt) {
+    if (perguntasObj[quest].alt == perguntasObj[quest].r) {
+        alert('Você acertou!')
+    } else {
+        alert('Você errou! A resposta certa é' + perguntasObj[quest].r)
+    }
 }
