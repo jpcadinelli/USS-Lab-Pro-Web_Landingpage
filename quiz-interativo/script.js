@@ -1,8 +1,16 @@
 const quizDiv = document.querySelector('#quiz')
 const main = document.querySelector('#main')
+const resultadoDiv = document.querySelector('.resultado')
+const p = document.querySelector('.pergunta')
+const a = document.querySelector('.a')
+const b = document.querySelector('.b')
+const c = document.querySelector('.c')
+const d = document.querySelector('.d')
+const e = document.querySelector('.e')
 
 let i = 0
 let resp = null
+let pontos = 0
 
 const perguntasObj = [
     {
@@ -35,37 +43,40 @@ const perguntasObj = [
 ]
 
 function iniciarQuiz() {
+    zeraPonto()
     i = 0
     quizDiv.classList.remove('escondido')
     questaoNaTela()
 }
 
 function questaoNaTela() {
-    const p = document.querySelector('.pergunta')
-    const a = document.querySelector('.a')
-    const b = document.querySelector('.b')
-    const c = document.querySelector('.c')
-    const d = document.querySelector('.d')
-    const e = document.querySelector('.e')
-
-    p.textContent = perguntasObj[i].p
-    a.textContent = perguntasObj[i].a
-    b.textContent = perguntasObj[i].b
-    c.textContent = perguntasObj[i].c
-    d.textContent = perguntasObj[i].d
-    e.textContent = perguntasObj[i].e
+    p.textContent = i + '- ' + perguntasObj[i].p
+    a.textContent = 'a) ' + perguntasObj[i].a
+    b.textContent = 'b) ' + perguntasObj[i].b
+    c.textContent = 'c) ' + perguntasObj[i].c
+    d.textContent = 'd) ' + perguntasObj[i].d
+    e.textContent = 'e) ' + perguntasObj[i].e
 }
 
 function selecionaAlternativa(alt) {
-    switch (alt) {
-        case 'a':
-            a.classList.add('selecionado')
-    }
+    resetaAlt()
     resp = alt
+    if (resp == 'a') {
+        a.classList.add('selecionado');
+    } else if (resp == 'b') {
+        b.classList.add('selecionado');
+    } else if (resp == 'c') {
+        c.classList.add('selecionado');
+    } else if (resp == 'd') {
+        d.classList.add('selecionado');
+    } else if (resp == 'e') {
+        e.classList.add('selecionado');
+    }
 }
 
 function confirmar() {
     if ( resp == perguntasObj[i].r) {
+        marcarPonto()
         alert('Você acertou!')
     } else {
         alert('Você errou! A resposta certa é ' + perguntasObj[i].r)
@@ -76,9 +87,32 @@ function confirmar() {
         telaDeResultado()
         return
     }
+    resetaAlt()
     questaoNaTela()
 }
 
 function telaDeResultado() {
     quizDiv.classList.add('escondido')
+    main.classList.add('escondido')
+    resultadoDiv.classList.remove('escondido')
+}
+
+function resetaAlt() {
+    a.classList.remove('selecionado')
+    b.classList.remove('selecionado')
+    c.classList.remove('selecionado')
+    d.classList.remove('selecionado')
+    e.classList.remove('selecionado')
+}
+
+function marcarPonto() {
+    pontos += 1
+}
+
+function zeraPonto() {
+    pontos = 0
+}
+
+function inicio() {
+    location.reload()
 }

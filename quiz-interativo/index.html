@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Quiz</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="questoes.js"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -32,6 +33,11 @@
             </ul>
             <button type="button" class='confirmar'onclick='confirmar()'>Confirmar</button>
         </div>
+    </div>
+    <div class="resultado escondido">
+        <h3>Resultado</h3>
+        <p class="parabens">Você terminou o Quiz e acertou <strong id="resultado"></strong> de <strong id="tamanho"></strong>!</p>
+        <button type="button" class="inicio" onclick="inicio()">Início</button>
     </div>
 </body>
 </html>

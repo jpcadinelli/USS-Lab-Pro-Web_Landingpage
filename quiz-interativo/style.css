@@ -72,3 +72,19 @@ span {
 .selecionado {
     color: yellow;
 }
+
+.resultado {
+    position: fixed;
+    top: 3rem;
+    left: 15%;
+    background: rgba(255, 255, 255, .01);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .35);
+    padding: .1rem 2rem;
+    width: 70%;
+    border-radius: 20px;
+    text-align: center;
+    margin: 2rem auto;
+    z-index: 9;
+    color: white;
+}
