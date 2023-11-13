@@ -1,3 +1,4 @@
+const quizDiv = document.querySelector('#quiz')
 const main = document.querySelector('#main')
 
 let i = 0
@@ -35,6 +36,7 @@ const perguntasObj = [
 
 function iniciarQuiz() {
     i = 0
+    quizDiv.classList.remove('escondido')
     questaoNaTela()
 }
 
@@ -55,6 +57,10 @@ function questaoNaTela() {
 }
 
 function selecionaAlternativa(alt) {
+    switch (alt) {
+        case 'a':
+            a.classList.add('selecionado')
+    }
     resp = alt
 }
 
@@ -64,6 +70,15 @@ function confirmar() {
     } else {
         alert('Você errou! A resposta certa é ' + perguntasObj[i].r)
     }
-    i += 1
+    if (i < perguntasObj.length - 1) {
+        i += 1
+    } else {
+        telaDeResultado()
+        return
+    }
     questaoNaTela()
+}
+
+function telaDeResultado() {
+    quizDiv.classList.add('escondido')
 }
