@@ -20,6 +20,18 @@
             <button type="button" onclick="iniciarQuiz()">Começar</button>
         </form>
     </main>
-    <div class="quiz" id="quiz"></div>
+    <div class="quiz" id="quiz">
+        <div class='perguntas'>
+            <p class="pergunta"></p>
+            <ul>
+                <li><button type="button" class="alternativa a" onclick="selecionaAlternativa('a')"></button></li>
+                <li><button type="button" class="alternativa b" onclick="selecionaAlternativa('b')"></button></li>
+                <li><button type="button" class="alternativa c" onclick="selecionaAlternativa('c')"></button></li>
+                <li><button type="button" class="alternativa d" onclick="selecionaAlternativa('d')"></button></li>
+                <li><button type="button" class="alternativa e" onclick="selecionaAlternativa('e')"></button></li>
+            </ul>
+            <button type="button" class='confirmar'onclick='confirmar()'>Confirmar</button>
+        </div>
+    </div>
 </body>
 </html>
